@@ -19,9 +19,9 @@ public class SpringMain {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("greeting.xml");
 		//FileSystemXmlApplicationContext for searching xml files when they are not in the project
 		Greeting g = ctx.getBean("anniversary", Greeting.class);  //this will return object of festival greeting
-		System.out.println(g.greet());
-		Greeting g1 = ctx.getBean("festival", Greeting.class);
-		System.out.println(g1.greet());
+	//	System.out.println(g.greet());
+		Greeting g1 = ctx.getBean("anniversary", Greeting.class);
+		//System.out.println(g1.greet());
 	}
 
 }
