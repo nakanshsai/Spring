@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+<bean id = "keyboard" class = "com.zensar.spring.instruments.Keyboard"></bean>
+<bean id = "trumpet" class = "com.zensar.spring.instruments.Trumpet"></bean>
+<bean id = "akansh" class = "com.zensar.spring.performers.Instrumentalist">
+	<property name="instrument" ref="keyboard"></property>
+	<property name="song" value="Hall of fame"></property>
+</bean>
+<bean id= "sai" parent="akansh">
+	<property name="song" value="better now"></property>
+</bean>
+<bean id= "rahul" parent="sai" >
+	<property name="instrument" ref = "trumpet"></property>
+</bean>
+</beans>

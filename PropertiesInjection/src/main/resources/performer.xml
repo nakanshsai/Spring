@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+
+<bean id = "akansh" class = "com.zensar.spring.performers.Instrumentalist">
+<property name="instrumentSongProps">
+	<props>
+		<prop key="keyboard">hall of fame</prop>
+		<prop key="guitar">better now</prop>
+		<prop key="trumpet">Ride</prop>
+	</props>
+</property>
+</bean>
+</beans>
