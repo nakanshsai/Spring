@@ -9,7 +9,7 @@
 </head>
 <body>
 	${loginerror}
-	<form action="login">
+	<form action="login" method ="post">
 	 	<p>username:
   		<input type="text" name="username" placeholder="enter username"></p>
   		<p>password:
